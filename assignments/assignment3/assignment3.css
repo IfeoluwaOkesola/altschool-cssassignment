@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #d1c4e9; /* Light purple background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure it takes the full viewport height */
+  padding: 20px;
+  margin: 0;
+}
+
+/* Card Styling */
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  position: relative;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Badge */
+.badge {
+  background-color: #ffe082; /* Light yellow */
+  color: #333;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+/* Card Image */
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Card Content */
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.series {
+  font-size: 0.9em;
+  font-weight: normal;
+  color: #757575;
+}
+
+.card-description {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
